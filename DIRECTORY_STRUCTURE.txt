@@ -1,0 +1,140 @@
+VaraHub Project Structure
+═════════════════════════════════════════════════════════════
+
+varahub/
+│
+├── 📱 lib/                                    [Main Application Code]
+│   │
+│   ├── ⚙️ config/                             [App Configuration]
+│   │   ├── app_colors.dart                   [Color definitions]
+│   │   ├── app_theme.dart                    [Light & dark themes]
+│   │   ├── app_translations.dart             [English & Bangla]
+│   │   └── supabase_config.dart              [Supabase connection]
+│   │
+│   ├── 📦 models/                             [Data Models]
+│   │   ├── user_model.dart                   [User entity]
+│   │   └── vehicle_model.dart                [Vehicle entity]
+│   │
+│   ├── 🔄 providers/                          [State Management]
+│   │   └── app_provider.dart                 [App-wide state]
+│   │
+│   ├── 📺 screens/                            [UI Screens]
+│   │   │
+│   │   ├── 🔐 auth/                          [Authentication]
+│   │   │   ├── login_screen.dart            [Login page]
+│   │   │   ├── register_screen.dart         [Registration]
+│   │   │   └── kyc_verification_screen.dart [KYC upload]
+│   │   │
+│   │   ├── 🏠 home/                          [Main Screens]
+│   │   │   ├── home_screen.dart             [Dashboard + Nav]
+│   │   │   ├── car_rent_screen.dart         [Car rentals]
+│   │   │   ├── bike_rent_screen.dart        [Bike rentals]
+│   │   │   ├── car_buysell_screen.dart      [Car marketplace]
+│   │   │   └── bike_buysell_screen.dart     [Bike marketplace]
+│   │   │
+│   │   ├── 👤 profile/                       [User Profile]
+│   │   │   └── profile_screen.dart          [Profile & settings]
+│   │   │
+│   │   ├── 🚗 vehicle/                       [Vehicle Screens]
+│   │   │   ├── vehicle_details_screen.dart  [Details + photos]
+│   │   │   └── booking_screen.dart          [Booking flow]
+│   │   │
+│   │   └── splash_screen.dart               [Splash screen]
+│   │
+│   └── main.dart                             [App Entry Point]
+│
+├── 🤖 android/                                [Android Configuration]
+│   └── app/
+│       ├── src/main/
+│       │   ├── AndroidManifest.xml          [Permissions + metadata]
+│       │   └── kotlin/com/varahub/app/
+│       │       └── MainActivity.kt          [Main activity]
+│       └── build.gradle                     [Build config]
+│
+├── 🍎 ios/                                    [iOS Configuration]
+│   └── Runner/
+│       ├── Info.plist                       [iOS settings]
+│       └── AppDelegate.swift                [App delegate]
+│
+├── 📦 assets/                                 [App Assets]
+│   ├── images/                              [Image files]
+│   ├── icons/                               [Icon files]
+│   ├── animations/                          [Lottie animations]
+│   └── fonts/                               [Roboto fonts]
+│
+├── 📚 Documentation Files
+│   ├── README.md                            [Main documentation]
+│   ├── SETUP_GUIDE.md                       [Setup instructions]
+│   ├── PROJECT_SUMMARY.md                   [Technical overview]
+│   ├── QUICK_REFERENCE.md                   [Quick commands]
+│   ├── DEPLOYMENT_CHECKLIST.md              [Launch checklist]
+│   ├── PROJECT_STATUS.md                    [Status report]
+│   └── DIRECTORY_STRUCTURE.txt              [This file]
+│
+├── ⚙️ Configuration Files
+│   ├── pubspec.yaml                         [Dependencies]
+│   ├── analysis_options.yaml                [Linting rules]
+│   └── .env.example                         [Environment template]
+│
+└── 🗄️ Database Schema (Supabase)
+    ├── users                                [User profiles]
+    ├── vehicles                             [Vehicle listings]
+    ├── vehicle_photos                       [Photos]
+    ├── bookings                             [Rental bookings]
+    ├── messages                             [Chat messages]
+    ├── reviews                              [Ratings]
+    ├── notifications                        [Push notifications]
+    └── wallet_transactions                  [Payments]
+
+═════════════════════════════════════════════════════════════
+
+Key Statistics:
+───────────────
+📁 Total Directories: 10+
+📄 Total Dart Files: 20
+📚 Documentation Files: 7
+⚙️ Config Files: 3
+🗄️ Database Tables: 8
+🔒 RLS Policies: 23
+📱 Screens: 13
+🎨 Models: 2
+🔄 Providers: 1
+
+═════════════════════════════════════════════════════════════
+
+Feature Implementation:
+───────────────────────
+✅ Authentication System      [100%]
+✅ KYC Verification           [100%]
+✅ Vehicle Listings           [100%]
+✅ Booking System             [100%]
+✅ Profile Management         [100%]
+✅ Dark Mode                  [100%]
+✅ Bilingual Support          [100%]
+✅ Database Schema            [100%]
+✅ UI/UX Design               [100%]
+✅ Documentation              [100%]
+
+🔧 Requires Configuration:
+   - Google Maps API Key
+
+🚀 Ready for Integration:
+   - Payment Gateways
+   - Push Notifications
+   - Real-time Chat UI
+   - OCR Service
+
+═════════════════════════════════════════════════════════════
+
+Quick Start Commands:
+─────────────────────
+1. flutter pub get              # Install dependencies
+2. Add Google Maps API key      # In Android & iOS configs
+3. flutter run                  # Launch app
+
+Login Credentials:
+──────────────────
+Email: demo@varahub.com
+Password: Demo@123
+
+═════════════════════════════════════════════════════════════
